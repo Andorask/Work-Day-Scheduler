@@ -18,8 +18,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" type="text/css"/>
     <title>Work Day Scheduler</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </head>
 
   <body>
@@ -30,10 +31,65 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
-      
+      <div class = "row time-block">
+        <div class = "hour">9:00</div>
+        <input type = "text" block-hour = "9" placeholder = "Add any notes here." id = "9am" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">10:00</div>
+        <input type = "text" block-hour = "10" placeholder = "Add any notes here." id = "10am" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">11:00</div>
+        <input type = "text" block-hour = "11" placeholder = "Add any notes here." id = "11am" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">12:00</div>
+        <input type = "text" block-hour = "12" placeholder = "Add any notes here." id = "12pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">1:00</div>
+        <input type = "text" block-hour = "13" placeholder = "Add any notes here." id = "13pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">2:00</div>
+        <input type = "text" block-hour = "14" placeholder = "Add any notes here." id = "14pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">3:00</div>
+        <input type = "text" block-hour = "15" placeholder = "Add any notes here." id = "15pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">4:00</div>
+        <input type = "text" block-hour = "16" placeholder = "Add any notes here." id = "16pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
+
+      <div class = "row time-block">
+        <div class = "hour">5:00</div>
+        <input type = "text" block-hour = "17" placeholder = "Add any notes here." id = "17pm" class = "textarea">
+        <button class = "saveBtn "></button>
+      </div>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="moment.js"></script>
+    <script> moment().format(); </script>
   </body>
 </html>
